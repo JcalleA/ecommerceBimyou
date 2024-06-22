@@ -12,10 +12,10 @@ import { Footer } from "@/components/ui/footer/Footer";
 
 export default async function Home() {
   
-  const products= await fetch(`${process.env.NEXT_PUBLIC_TURL}/api/getproducts`)
+  const products= await fetch(`${process.env.URL}/api/getproducts`)
   const data = await products.json()
   
-  const variantesList= await fetch(`${process.env.NEXT_PUBLIC_TURL}/api/getvariants`)
+  const variantesList= await fetch(`${process.env.URL}/api/getvariants`)
   const variantes= await variantesList.json()
   
   
